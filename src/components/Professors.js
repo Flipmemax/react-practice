@@ -1,6 +1,7 @@
 import "./Professorsstyle.css";
 import Professorlist from "../data/Professorlist.json";
 import ProfessorsTemplate from "./ProfessorsTemplate";
+import LikeButton from "./LikeButton";
 
 export default function Professors() {
   const professors = Professorlist.Professors;
@@ -15,6 +16,7 @@ export default function Professors() {
               subject={professors.subject}
             />
           </div>
+          <LikeButton />
         </div>
       ))}
     </div>

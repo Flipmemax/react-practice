@@ -1,6 +1,7 @@
 import "./Studentstyle.css";
 import Studentlist from "../data/Studentlist.json";
 import StudentsTemplate from "./StudentsTemplate";
+import LikeButton from "./LikeButton";
 
 export default function Students() {
   const students = Studentlist.Students;
@@ -18,6 +19,7 @@ export default function Students() {
               playsQuidditch={students.playsQuidditch}
               age={students.age}
             />
+            <LikeButton />
           </div>
         </div>
       ))}
