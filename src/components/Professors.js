@@ -3,8 +3,12 @@ import "./Professors.css";
 export default function Professors(props) {
   return (
     <div className="Professors">
-      <p>Name: {props.name}</p>
-      <p>Subject: {props.subject}</p>
+      <p>
+        <strong>Name:</strong> {props.name}
+      </p>
+      <p>
+        <strong>Subject:</strong> {props.subject}
+      </p>
     </div>
   );
 }
