@@ -2,18 +2,22 @@ export default function StudentsTemplate(props) {
   return (
     <div>
       <p>
-        <strong>Name:</strong> {props.firstName} {props.lastName}
+        <strong>Name:</strong>
+        <br /> {props.firstName} {props.lastName}
       </p>
 
       <p>
         <strong>Gender: </strong>
+        <br />
         {props.gender === "m" ? "Male" : "Female"}
       </p>
       <p>
-        <strong>Age:</strong> {props.age}
+        <strong>Age:</strong>
+        <br /> {props.age}
       </p>
       <p>
-        <strong>House:</strong> {props.house}
+        <strong>House:</strong>
+        <br /> {props.house}
       </p>
       <p>
         {props.playsQuidditch ? "Plays Quidditch" : "Does not play Quidditch"}
