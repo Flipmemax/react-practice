@@ -1,14 +1,22 @@
-import "./Professors.css";
+import "./Professorsstyle.css";
+import Professorlist from "../data/Professorlist.json";
+import ProfessorsTemplate from "./ProfessorsTemplate";
 
-export default function Professors(props) {
+export default function Professors() {
+  const professors = Professorlist.Professors;
+
   return (
-    <div className="Professors">
-      <p>
-        <strong>Name:</strong> {props.name}
-      </p>
-      <p>
-        <strong>Subject:</strong> {props.subject}
-      </p>
+    <div>
+      {professors.map((professors, index) => (
+        <div className="Professorsstyle">
+          <div key={index}>
+            <ProfessorsTemplate
+              name={professors.name}
+              subject={professors.subject}
+            />
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

@@ -1,0 +1,32 @@
+{
+  "Professors": [
+    {
+      "name": "Minerva",
+      "subject": "Transfiguration"
+    },
+    {
+      "name": "Snape",
+      "subject": "Potions"
+    },
+    {
+      "name": "Flitwick",
+      "subject": "Spells"
+    },
+    {
+      "name": "Moody",
+      "subject": "Defense against the Dark Arts"
+    },
+    {
+      "name": "Firenze",
+      "subject": "Divination"
+    },
+    {
+      "name": "Hooch",
+      "subject": "Flying"
+    },
+    {
+      "name": "Hagrid",
+      "subject": "Care of Magical Creatures"
+    }
+  ]
+}

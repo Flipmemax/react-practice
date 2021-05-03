@@ -1,30 +1,26 @@
-import "./Students.css";
+import "./Studentstyle.css";
+import Studentlist from "../data/Studentlist.json";
+import StudentsTemplate from "./StudentsTemplate";
 
-export default function Students(props) {
+export default function Students() {
+  const students = Studentlist.Students;
+
   return (
-    <div className="Students">
-      <p>
-        <strong>Student ID:</strong> {props.id}
-      </p>
-      <p>
-        <strong>First name:</strong> {props.firstName}
-      </p>
-      <p>
-        <strong>Last name:</strong> {props.lastName}
-      </p>
-      <p>
-        <strong>Gender: </strong>
-        {props.gender === "m" ? "Male" : "Female"}
-      </p>
-      <p>
-        <strong>Age:</strong> {props.age}
-      </p>
-      <p>
-        <strong>House:</strong> {props.house}
-      </p>
-      <p>
-        {props.playsQuidditch ? "Plays Quidditch" : "Does not play Quidditch"}
-      </p>
+    <div>
+      {students.map((students) => (
+        <div className="Studentstyle">
+          <div key={students.id}>
+            <StudentsTemplate
+              firstName={students.firstName}
+              lastName={students.lastName}
+              house={students.house}
+              gender={students.gender}
+              playsQuidditch={students.playsQuidditch}
+              age={students.age}
+            />
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
