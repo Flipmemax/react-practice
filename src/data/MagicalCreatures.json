@@ -1,0 +1,32 @@
+{
+  "Creatures": [
+    {
+      "name": "Owl",
+      "description": "Delivers your mail!"
+    },
+    {
+      "name": "Goblin",
+      "description": "Can perform magic without wands, watch your coins!"
+    },
+    {
+      "name": "Ghosts",
+      "description": "Spirits of the dead"
+    },
+    {
+      "name": "Centaur",
+      "description": "Half human, half horse"
+    },
+    {
+      "name": "Unicorn",
+      "description": "One of the most, if not the most, majestic creatures!"
+    },
+    {
+      "name": "Dragon",
+      "description": "Huge and very dangerous!"
+    },
+    {
+      "name": "Phoenix",
+      "description": "Produces tears with special healing powers, regenerates itself after death and can disappear and reappear through a burst of flames!"
+    }
+  ]
+}

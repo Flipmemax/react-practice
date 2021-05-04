@@ -5,21 +5,9 @@
   border-radius: 999px;
 }
 
-.ButtonStyle:hover {
-  font-weight: bold;
-  font-size: 20px;
-  transition: 1s;
-}
-
 .ButtonDislikeStyle {
   margin-left: 5px;
   background-color: rgb(250, 110, 110);
   border: 1px solid black;
   border-radius: 999px;
-}
-
-.ButtonDislikeStyle:hover {
-  font-weight: bold;
-  font-size: 20px;
-  transition: 1s;
 }
