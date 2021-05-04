@@ -8,19 +8,24 @@ import axios from "axios";
 export default function ArticleList() {
   const [articles, set_articles] = useState([]);
 
+  async function doSomeDataFetching() {
+    // console.log("I'm gonna fetch some data!");
+    const response = await axios.get(
+      "https://jsonplaceholder.typicode.com/posts?_limit=5"
+    );
+    set_articles(response.data);
+    // console.log("Got back", response);
+  }
+
   const clearNotifications = () => {
     set_articles([]);
   };
 
+  const showNotifications = () => {
+    doSomeDataFetching();
+  };
+
   useEffect(() => {
-    async function doSomeDataFetching() {
-      console.log("I'm gonna fetch some data!");
-      const res = await axios.get(
-        "https://jsonplaceholder.typicode.com/posts?_limit=5"
-      );
-      set_articles(res.data);
-      console.log("Got back", res);
-    }
     doSomeDataFetching();
   }, []);
 
@@ -28,6 +33,9 @@ export default function ArticleList() {
     <div>
       <button onClick={clearNotifications} className="ButtonDislikeStyle">
         Click here to clear articles
+      </button>
+      <button onClick={showNotifications} className="ButtonDislikeStyle">
+        Show articles
       </button>
       {articles.map((articles) => (
         <div className="Articlestyle">
